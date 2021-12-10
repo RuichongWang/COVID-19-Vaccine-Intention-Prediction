@@ -1,4 +1,15 @@
 # Humana-Competition
 Predicting the Likelihood of Receiving Vaccines Using an Ensembling of CatBoost and TabNet Approach
 
-COVID-19, a severe ongoing pandemic, is threatening everyone’s life and its long term effect after recovering brings out the importance of protection in advance. We used CatBoost and Tabnet algorithms with preprocessed data to build a prediction model with a 0.68 AUC score. The results show that members’ age, food insecurity level, and risk level factors are key predictors in the dataset and impact most on vaccine hesitancy. Inspired by the prediction and data analysis, we summarized the underlying issues for vaccine hesitancy such as trust, race disparity, lack of access, and disinformation. Recommendations such as vaccine incentive programs, mobile vaccination clinics, extended hours and walk-in, targeted messaging are made to tackle different issues underlined in vaccine hesitancy.
+In this competition, we used the ensemble of TabNet and CatBoost. This is an already oversampled imbalanced dataset, 17% of the total sample are positive samples. In other words, the ratio of the number of positive samples to negative samples is 1:5. To solve this problem, we used methods that are similar to down-sampling. We randomly split all the negative samples into 5 parts and for each part, we combine it with all the positive samples.
+
+<p align="middle">
+  <img src="imgs/sub dataset.pdf" height="600"/>
+</p>
+
+
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://yoursite.com/the.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
